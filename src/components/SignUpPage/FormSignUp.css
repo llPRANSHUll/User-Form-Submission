@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "AvenirLTStd-Roman";
+  src: url(../SignUpPage/AvenirLTStd-Roman.otf) format("truetype");
+}
+@font-face {
+  font-family: "AvenirLTStd-Book";
+  src: url(../SignUpPage/AvenirLTStd-Book.otf) format("truetype");
+}
+* {
+  font-family: "AvenirLTStd-Roman";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  color: white;
+  opacity: 0.5;
+  filter: invert(1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  /* background-color: #b9e04c; */
+}
+
+#dob {
+  cursor: pointer;
+}
+
+.signup-form-container {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup-form-container h1 {
+  color: #b9e04c;
+  text-align: left;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.form-input-select {
+  font-family: "AvenirLTStd-Book";
+  background: #303030;
+  width: 326px;
+  padding: 13px 13px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-weight: none;
+  caret-color: #fff;
+  color: #fff;
+  font-size: 15px;
+}
+.form-input-select:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px -3.68px 3.68px 0px rgba(97, 96, 96, 0.2) inset;
+  font-size: 16px;
+  color: #b9e04c;
+}
+select {
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  color: rgb(185, 224, 76);
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+.signup-form-container input {
+  font-family: "AvenirLTStd-Book";
+  background: #303030;
+  width: 300px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-weight: none;
+  caret-color: #fff;
+  color: #fff;
+  font-size: 15px;
+}
+.form-inputs {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+.signup-form-container input:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px -3.68px 3.68px 0px rgba(97, 96, 96, 0.2) inset;
+  font-size: 16px;
+  color: #b9e04c;
+}
+.form-inputs p {
+  font-size: 0.8rem;
+  margin: -17px 0;
+
+  text-align: left;
+  color: #f00e0e;
+}
+.signup-form-container div {
+  line-height: 3.4;
+}
+
+.signup-form-container input::-webkit-input-placeholder {
+  color: #fff;
+
+  justify-content: center;
+}
+.signup-form-container input::-webkit-input-placeholder:hover {
+  color: #b9e04c;
+}
+
+.signup-form-container button {
+  margin-left: 114px;
+  margin-top: 15px;
+}
+.pushable {
+  background: #323232;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  box-shadow: 0px -3.68px 3.68px 0px rgba(3, 3, 3, 0.25) inset;
+}
+.front {
+  display: block;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #1b1b1b;
+  color: #b9e04c;
+  transform: translateY(-6px);
+  box-shadow: 0px -4.9px 4.9px 0px rgba(3, 3, 3, 0.25) inset;
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 335px) {
+  .signup-form-container {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+  }
+  .signup-form-container input {
+    width: 250px;
+  }
+
+  .form-input-select {
+    width: 275px;
+  }
+
+  .signup-form-container button {
+    margin-left: 94px;
+    margin-top: 15px;
+  }
+}
